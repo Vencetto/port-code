@@ -1,14 +1,15 @@
 import React from 'react';
 import store from '../store';
 import Project from './Project';
+import '../styles/ProjectList.css'
 
 function ProjectsList() {
   return (
     <div>
+      <div className="" ></div>
+      <h1 className="projects-title">Projects</h1>
 
-      <h1 class="projects-title">Projects</h1>
-
-      <div class="list-container">
+      <div className="list-container">
         {store.map(e => <Project 
             title={e.title}
             codeLink={e.codeLink}
